@@ -10,11 +10,11 @@ const fetchUserData = () => {
                 const resConvert = await res.json();
 
                 localStorage.setItem("@gitSearch:githubUserInfo", JSON.stringify(resConvert));
-                location.replace("http://127.0.0.1:5500/src/pages/profile.html#");
+                location.replace("./src/pages/profile.html#");
 
                 return resConvert;
             }else {
-                location.replace("http://127.0.0.1:5500/src/pages/error.html");
+                location.replace("./src/pages/error.html");
             }
         });
         
